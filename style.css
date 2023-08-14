@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+/* RULES GENERIC */
+html{
+    height: 100%;
+    background: linear-gradient(#FFA17F, #00223E);
+    background-attachment: fixed;
+    color: white;
+}
+img{max-width: 100%;}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.logo > img{ 
+    width: 66px;
+}
+.container-main{margin: 40px 0;}
+.container > .container-main textarea{
+    height: 120px;
+    width: 100%;
+    border: 0px;
+    padding: 20px 10px;
+    border-radius: 10px;
+    font-size: 17px;
+    resize: none;
+    outline: none;
+    box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.267)
+}
+.container > .controls{
+    display: flex;
+    justify-content: space-between;
+}
+
+button:disabled{opacity: 0.6;}
+button{
+    background: #f41569;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 3px rgba(0, 0, 0, 0.103)
+}
+button img{vertical-align: middle;}
+
+.pitch-controls{
+    width: 80%;
+}
+.pitch-controls input{width: 100%;accent-color: white;}
+.pitch-controls label{display:block;margin-bottom: 10px;font-size: 15px;}
+.pitch-controls:disabled{opacity: 0.6;}
+
+
+.animated-duck{
+    display: none;
+}
+.talking .static-duck{
+    display: none;
+}
+.talking .animated-duck{
+    display: block;
+}
